@@ -1,0 +1,81 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ * @version         v4.0.1
+ */
+
+@media all {
+
+    .ym-hlist {
+        /* Einfassen der Floats im IE */
+        overflow:hidden;
+        /* Bugfix:IE - collapsing horizontal margins */
+        position:relative;
+        line-height:1em;
+        background: transparent;
+    }
+
+    .ym-hlist ul {
+        margin:0;
+        padding: 7px 0px 7px 16px;
+        height: 28px;
+        /* Bugfix:IE - Doubled Float Margin Bug */
+        display:inline;
+        float:right; /* LTR */
+			width: 687px;
+    }
+
+    .ym-hlist ul li {
+        /* Bugfix:IE - Doubled Float Margin Bug */
+        display:inline;
+        float:left; /* LTR */
+        font-size:1.0em;
+        line-height:1em;
+        list-style-type:none;
+        margin: 0 .75em 0 0;
+        padding:0;
+    }
+
+    .ym-hlist ul li a,
+    .ym-hlist ul li strong {
+        background:transparent;
+        color:#fff;
+        display:block;
+        font-size: 107.14%;
+        line-height: 2em;
+        padding: 0 0.5em;
+        font-weight:normal;
+        text-decoration:none;
+        text-shadow: 0 1px 1px rgba(0,0,0,.5);
+        width:auto;
+				text-transform: uppercase;
+				font-weight: 500;
+    }
+
+    .ym-hlist ul li a:focus,
+    .ym-hlist ul li a:hover,
+    .ym-hlist ul li a:active  {
+        background: #8A8A8A;
+        background: rgba(255,255,255,.25);
+        text-decoration:none;
+        outline: 0 none;
+    }
+
+    .ym-hlist ul li.active {
+        background: #8A8A8A;
+        background: rgba(255,255,255,.3);
+        color: #fff;
+    }
+
+    .ym-hlist ul li.active strong,
+    .ym-hlist ul li.active a,
+    .ym-hlist ul li.active a:focus,
+    .ym-hlist ul li.active a:hover,
+    .ym-hlist ul li.active a:active {
+        background:transparent;
+        color:#fff;
+        text-decoration:none;
+    }
+
+
+
+}

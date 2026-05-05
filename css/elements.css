@@ -1,0 +1,188 @@
+@media all {
+
+		/*** Slider ***/
+
+		.tp-banner-container .tp-banner .mpsn-grey.tp-caption { background-color: rgba(0, 0, 0, 0.6); padding: 0.1em 0.1em 0em 0.2em; }
+		/*.tp-caption.finewide_large_white { margin-top: 0.25em !important; } */
+
+		.no-js .tp-banner-container { display: none; height: 0;	}
+		.no-js .tp-banner { margin-top: 0; padding-top: 0; }
+		
+		.tp-banner-container {
+			width:100%;
+			position:relative;
+			padding:0;
+		}
+		.tp-banner-container::before {
+			content: '';
+			display: block; height: 100px;
+			background-color: white;
+		}
+		.no-js .tp-banner-container::before { display: none; }
+		 
+		.tp-banner {
+			width:100%;
+			position:relative;
+		}
+		
+		.tp-banner ul, .tp-banner li { 
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.tp-banner iframe { 
+			border: none;
+		}
+
+
+    /* --- Inhalte ------------------ */
+    
+    .mpsn-gs { width: 38.2%; }
+    .mpsn-gb { width: 61.8%; }
+    .mpsn-content .ym-gbox-left { padding: 0 1em 0 0; }
+    .mpsn-content .ym-gbox-right { padding: 0 0 0 1em; }
+    
+    .mpsn-content { padding-top: 1px; margin-top: -1px; } /* Patch fuer unterschiedliches Float-Verhalten beim lightbox-wrapper */
+    div.lightbox-wrapper-left, div.lightbox-wrapper-right { margin: 0.357em 1.143em 0.357em 0.214em; float: left; position: relative; display: inline; }
+    div.lightbox-wrapper-right { margin-right: 0.214em; margin-left: 1.143em; float: right; }
+    .mpsn-gcm .mpsn-content .lightbox-wrapper-left.firstchild, .mpsn-gcm .mpsn-content .lightbox-wrapper-right.firstchild { margin-top: 1.857em; } /*bei Spalten*/
+    .mpsn-content .ym-grid div.lightbox-wrapper-left, .mpsn-content .ym-grid div.lightbox-wrapper-right { margin-top: 0.857em; } /*Abstand zum ersten Bild*/
+    
+    .mpsn-gcm .mpsn-content div.lightbox-wrapper-left img, .mpsn-gcm .mpsn-content div.lightbox-wrapper-right img { margin: 0; }
+    .mpsn-gcm .mpsn-content img.mpsn-enlarge { opacity: 0.66; position: absolute; right: 5px; bottom: 9px; margin: 0; border: 0; box-shadow: none; }
+/*    .mpsn-gcm .mpsn-content.klassenname .mpsn-enlarge { background: url(../images/enlarge_lupe.png) no-repeat right bottom; width: 30px; height: 30px; }*/
+
+
+    /*** Liste Bild/Text ***/
+    
+    .mpsn-content.mpsn-list .ym-grid .lightbox-wrapper-left, .mpsn-content.mpsn-list .ym-grid .lightbox-wrapper-right { padding-top: 0.357em; margin-top: 0; margin-bottom: 0; }
+    .mpsn-content.mpsn-list .ym-grid, .mpsn-content.mpsn-list .ym-grid { margin-top: 0.857em; }
+    .mpsn-content.mpsn-list { margin-top: 1.857em; }
+    .mpsn-content.mpsn-list p { margin-top: 0; margin-bottom: 1.5em; }
+
+    .mpsn-content.mpsn-list.team p:last-child { margin-bottom: 0; }
+    .mpsn-content.mpsn-list.team .ym-g66 { vertical-align: bottom; }
+
+
+	/* --- Bildergalerie ------------------ */
+
+	ul.gallery {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		clear: both;
+		margin-left: 2px; /* fuer Standard-Bildschatten */
+		margin-top: 1em;
+	}
+	
+	ul.gallery li {
+		float: left;
+		width: 23%;
+		border: 0px solid #acacac;
+		margin-left: 0px;
+		margin-right: 10px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		height: auto;
+		background-color: transparent;
+		list-style-type: none;
+	}
+    
+	ul.gallery li p {
+		text-align: left;
+		margin-top: 0;
+	}
+    
+	.mpsn-gcm ul.gallery li img {
+		border: 1px solid #ccc;
+	}
+	
+	ul.gallery li p.thumb {
+		min-height: 100px;
+	}
+	
+	div.gallery-navigation {
+		width: 90%; text-align: center;
+	}
+
+
+	/* --- Formulare ------------------ */
+
+    .ym-form .float-right { margin: 0; }
+    textarea { resize: none; }
+
+
+    .ym-form div.ym-fbox-text input:focus,
+    .ym-form div select:focus,
+    .ym-form div textarea:focus,
+    .ym-form div.ym-fbox-text input:hover,
+    .ym-form div select:hover,
+    .ym-form div textarea:hover,
+    .ym-form div.ym-fbox-text input:active,
+    .ym-form div select:active,
+    .ym-form div textarea:active {
+        /*outline: 1px #ddd solid;*/
+        background: #bfbfbf;
+        border: 1px solid #bfbfbf;
+    }
+
+    .ym-form .ym-fbox-text input,
+    .ym-form .ym-fbox-text textarea,
+    .ym-form .ym-fbox-select select {
+        background: #898989;
+        border: 1px solid #898989;    
+    }
+    
+    .ym-form { background: transparent; border: none; }
+    .ym-form, #content .ym-form * { box-shadow: none; }
+    .ym-form fieldset { background: #4c4c4c; margin: 0; padding: 0.75em 0.5em; padding-top: 20px; }
+    .ym-form label { color:#f4f4f4; }
+    .ym-form div.ym-fbox-button { background: none; border: none; }
+
+.ym-button, .ym-form button, .ym-form input[type="button"], .ym-form input[type="reset"], .ym-form input[type="submit"] {
+    background-color: #4C4C4C;
+    background-image: none;
+    border: none;
+    /*border-radius: 1em 0 0 1em;*/
+    /*border-radius: 1em;*/
+    box-shadow: none;
+    color: #ddd !important;
+    color: rgba(221,221,221,1.0) !important;
+    margin: 1.5em -1em 0 0;
+    text-decoration: none !important;
+    text-shadow: none;
+}
+
+.ym-form button:hover, .ym-form input[type="button"]:hover, .ym-form input[type="reset"]:hover, .ym-form input[type="submit"]:hover,
+.ym-form button:focus, .ym-form input[type="button"]:focus, .ym-form input[type="reset"]:focus, .ym-form input[type="submit"]:focus {
+    background-image: none;
+    background-color: #898989; 
+    color: #000 !important;
+    color: rgba(255,255,255,1.0) !important;
+}
+
+
+
+	::placeholder { font-size: 100%; color: #ddd; font-weight: 300; }
+	::-webkit-input-placeholder { font-size: 100%; color: #ddd; font-weight: 300; }
+	::-ms-input-placeholder { font-size: 100%; color: #ddd; font-weight: 300; }
+
+
+
+
+	/* --- Impressum ------------------ */
+
+	.impressum table { width: 600px; vertical-align:top;  margin-top: 15px; }
+	.impressum th { background-color: #e9e9e9; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; width: 37.5%; border-left: 1px solid #e0e0e0; vertical-align: top; }
+	.impressum td { background-color: #ffffff; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; }
+
+
+
+
+
+
+
+
+}
+

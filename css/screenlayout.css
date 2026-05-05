@@ -1,0 +1,143 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ * @version         v4.0.1
+ */
+
+@media screen {
+
+	/* force vertical scrollbar */
+	body { overflow-y: scroll; }
+
+	/* Layout Module Configuration */
+	.ym-wrapper { width: 960px; margin: 0 auto; }
+
+	.mpsn-gcm { width: 960px; }
+	.mpsn-gcm .ym-gcbox { padding: 120px 2em 3em 0px; }
+	.start	.mpsn-gcm .ym-gcbox { padding-top: 28px; }
+	.no-js .start .mpsn-gcm .ym-gcbox { padding-top: 120px; }
+	
+	.ym-wbox { padding: 0; }
+
+
+	/* Element Styling */
+
+	body { background: #1b1b1b; } 
+
+	#logo { 
+		float: left; 
+		height: 100%;
+		}
+
+	#header .ym-wrapper { height: 315px; position: relative; }
+	.slider #header .ym-wrapper { height: 0px; }
+	#header { background: url(../images/slider/slide1.jpg) no-repeat center top; }
+	.slider #header { background: none; }
+	#header #header-links { display: none; position: absolute; right: 10px; top: 6px; text-align: right; background: none; }
+
+	#nav-hlist .ym-wrapper { 
+		height: 90px; 
+		padding-top: 5px; 
+		padding-bottom: 5px;
+		-webkit-transition: all .4s linear;
+		-moz-transition: all .4s linear;
+		-o-transition: all .4s linear;
+		-ms-transition: all .4s linear;
+	}
+	#nav-hlist ul.navigation { 
+		-webkit-transition: all .4s linear;
+		-moz-transition: all .4s linear;
+		-o-transition: all .4s linear;
+		-ms-transition: all .4s linear;
+	}
+	#nav-hlist.small .ym-wrapper { 
+		height: 50px; 
+	}
+	#nav-hlist.small ul.navigation { 
+		margin-top: 4px; 
+	}
+	#nav-hlist.normal .ym-wrapper { 
+		height: 90px; 
+	}
+	#nav-hlist.normal ul.navigation { 
+		margin-top: 23px; 
+	}
+	#nav-hlist { 
+		position: fixed; 
+		top: 0; 
+		z-index: 40;
+		width: 100%;
+		background-color: #656565;
+		background-color: rgba(0, 0, 0, 0.75); 
+	}
+	
+	#nav-links { display: block; position: absolute; right: 30px; top: 6px; text-align: right; background: none; }
+	#main #nav-links { top: 106px; }
+	#main1 .ym-wrapper { position: relative; }
+
+	#main, .main { background: #fff; }
+	#main .ym-wrapper { background: url(../images/main_wr.jpg) no-repeat center top; position: relative; }
+	#main .ym-wbox { min-height: 350px; background: url(../images/main_wb.jpg) no-repeat center bottom; }
+	#main .content { background: #fff; }
+
+	.parallax {
+		margin-top: 0px;
+		/*min-height: 500px;*/
+		min-height: 300px;
+		max-height: 500px;
+		height: 38vh;
+		background-repeat: no-repeat;
+	}
+
+	#footer-top { background: #000; }
+	#footer-bottom { background: #1b1b1b; }
+	#footer-top .ym-wrapper, #footer-bottom .ym-wrapper {
+		height:34px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background: transparent;
+		font-size: 78.57%;
+		text-align: center;
+		color: #818181;
+	}
+	
+	#footer-top p, #footer-bottom p { margin: 0; }
+
+	/* skip links styling */
+	.ym-skiplinks a.ym-skip:focus,
+	.ym-skiplinks a.ym-skip:active {
+		color:#fff;
+		background:#333;
+		border-bottom:1px #000 solid;
+		padding:10px 0;
+		text-align: center;
+		text-decoration:none;
+	}
+
+}
+
+@media screen and (min-width: 1280px) {
+	.parallax {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+/* 1px background-image centering bug in Safari & Chrome */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/*	.ym-wrapper, .ym-wbox, #header, #main, #footer, #nav-hlist {
+		background-position: 49.999% top;
+	}
+	html {
+		margin-left: 1px;
+}
+
+}*/
+
+@media print {
+	#logo { display: none; }
+	#header { height: auto; }
+	.parallax { display: none; }
+}

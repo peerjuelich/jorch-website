@@ -1,0 +1,52 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ * @version         v4.0.1
+ */
+
+@media print {
+
+  body { font-size:10pt; }
+  #header-links, #nav-hlist, #nav-vlist, #ym-search, #footer-top, .tp-banner-container, .tp-banner, #nav-links { display:none; }
+  h1,h2,h3,h4,h5,h6 { page-break-after:avoid; }
+
+  .mpsn-gcl { display:none; }
+  .mpsn-gcr { display:none; }
+  .mpsn-gcm { width:100%; }
+
+/*  a[href]:after {
+    content:" <URL:"attr(href)"> ";
+    color:#444;
+    background:inherit;
+    font-style:italic;
+  }*/
+
+
+#logo, #header a { display: none; }
+#header  { height: auto; margin-bottom: 20pt; text-align: center; }
+#header img.ym-print { width: 200pt; }
+#header #cycle img { display: none; }
+#footer-bottom { font-size:8pt; height: auto; margin-top: 40pt; text-align: center; }
+
+
+.ym-grid {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	list-style-type: none;
+	padding-left:0;
+	padding-right:0;
+	margin-left:0;
+	margin-right:0;
+}
+
+.ym-gl { float:left; margin: 0; }
+.ym-gr { float:right; margin: 0 0 0 -5px; }
+
+
+.ym-form { margin-top: 30pt; }
+.ym-fbox-text input { height: 20pt; }
+.ym-fbox-button { display: none; }
+
+
+
+}

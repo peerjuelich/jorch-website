@@ -1,0 +1,21 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ * @version         v4.0.1
+ */
+
+/* import core styles | Basis-Stylesheets einbinden */
+
+@import url(../yaml/core/base.min.css);
+
+/* import screen layout | Screen-Layout einbinden */
+@import url(fonts.css);
+@import url(hlist.css);
+@import url(../yaml/forms/gray-theme.css);
+
+@import url(typography.css);
+@import url(screenlayout.css);
+@import url(elements.css?2);
+@import url(responsive.css);
+
+/* import print layout | Druck-Layout einbinden */
+@import url(print.css);
